@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="../../Images/favicon.png">
+
+    <title>Submittals</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/jquery-ui.css">
+    <link rel="stylesheet" href="../../css/jquery.sidr.light.css">
+
+    <style>
+        #slider-wrapper
+        {
+            margin: 0 auto;
+            /*padding: 40px;*/
+            max-width: 1920px;
+        }
+
+        #layerslider
+        {
+            max-height: 720px;
+            max-width: 1920px;
+        }
+    </style>
+
+    <!-- LayerSlider stylesheet -->
+    <link rel="stylesheet" href="../../css/layerslider.css" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/carousel.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../../css/colio/css/colio.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- fonts -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: ['Roboto+Condensed:400,300,700:cyrillic-ext,latin,greek-ext,latin-ext'] }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<form action="https://siralamericas.com/Account/LogOff" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="EOSErgLvx-eufenOwiJPvxaVPrg7enxkp_ARP2xc1ijDmidffMx2GDcneYsEiPmXXM3DPOJ1OOrPL15fvBbN-E_ZdIbs2vLO8OdDtRf4KSA1" /></form>    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <!-- data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" -->
+                        <button type="button" class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="../../index.html">
+                            <img src="../../Images/logo.png" alt="" /></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="sideNav">
+                        <ul class="nav navbar-nav">
+                            <li ><a href="../../Modular.html">Modular 6-Way</a></li>
+                            <li ><a href="../../ValveWater.html">Control Valve Water</a></li>
+                            <li ><a href="../../ValveSteam.html">Control Valve Steam</a></li>
+                            <li ><a href="../../ButterflyValve.html">Butterfly Valve</a></li>
+                            <li   class="active"  ><a href="../../Zone.html">Zone Valve</a></li>
+                            <li ><a href="../../Actuator.html">Actuators</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                            <li><a href="../../Home/Contacts.html">Contacts</a></li>
+                                <li><a href="https://bidtracer.com/">Login</a></li>
+                            
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+
+    
+
+<div class="wrapcontainer2">
+    <div class="container marketing">
+        <div style="margin-bottom: 50px;">
+            <ul class="nav nav-tabs">
+                        
+                            <li class=" "><a href="13.html">Z-series 2-Way  1/2&quot; - 3/4&quot;</a></li>
+                        
+                            <li class=" active  "><a href="14.html">Z-series 3-Way  1/2&quot; - 3/4&quot;</a></li>
+
+            </ul>
+        </div>
+        <h1>Z-series 3-Way  1/2&quot; - 3/4&quot;</h1>
+        <p>Filter submittals by desired Flow</p>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div style="max-width: 320px; margin: 0px auto;">
+                    <select class="form-control" id="sSub">
+                            <option value="3731">1/2&quot;, Cv 2.8, Z315</option>
+                            <option value="3733">1/2&quot;, Cv 2.8, Z315S</option>
+                            <option value="3732">3/4&quot;, Cv 4.65, Z320</option>
+                            <option value="3734">3/4&quot;, Cv 4.65, Z320S</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+            <hr class="featurette-divider2">
+            <button type="button" class="btn btn-default btnPrint" value="Print">Print Submittal</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#emailModal">Email Submittal</button>
+            <div id="submDetails" style="min-height:200px;">
+                
+
+<div class="thumbnail" style="max-width: 800px; padding: 20px; margin: 40px auto;" id="div_print">
+    <div class="row submittal" id="submittal">
+        <div class="col-md-8 col-xs-8" style="padding-top: 50px;">
+            <img id="imgLogo" src="../../Images/logo-submittals.png" alt="">
+            <h1 class="text-left">Z315</h1>
+            <p class="lead2">Brass Ball and Stem</p>
+            <p>1/2&quot;, 3-way, Female NPT</p>
+        </div>
+
+        <div class="col-md-4 col-xs-4 text-center">
+            
+            
+
+                <img id="imgProduct" src="../../images/0.5in_3W_NPT_ZV_iso_0.png" alt="" />
+        </div>
+        <!-- Submittal -->
+        <div class="col-md-7 col-xs-7" style="padding: 15px; padding-bottom: 0px;">
+            <div class="table-responsive">
+                <table style="width: 80%;" class="table table-bordered ">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="light-shade">DN</td>
+                            <td width="47%">15</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="light-shade">Size (inches)</td>
+                            <td>1/2&quot;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="light-shade">Cv</td>
+                            <td>2.8</td>
+                        </tr>
+                                                
+                        <tr>
+                            <td class="lighter-shade">Temperature Range</td>
+                            <td>0&#176;F to 212&#176;F [-18&#176;C to 100&#176;C]</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4 " class="light-shade">Pressure</td>
+                            <td class="lighter-shade">Body</td>
+                            <td>360 psi</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">Close Off</td>
+                            <td>80 PSI</td>
+                        </tr>
+                            <tr>
+                                <td class="lighter-shade">Differential</td>
+                                <td>40 PSI</td>
+                            </tr>
+                            <tr>
+                                <td class="lighter-shade">Max Inlet</td>
+                                <td> N/A </td>
+                            </tr>
+                        <tr>
+                            <td rowspan="2" class="light-shade">Leakage</td>
+                            <td class="lighter-shade">A-AB Port</td>
+                            <td>
+ 0%                         </td>
+                    </tr>
+                    <tr>
+                        <td class="lighter-shade">B Port</td>
+                        <td>
+ 0%                         </td>
+                    </tr>
+                        <tr>
+                            <td rowspan="6" class="light-shade">Materials</td>
+                            <td class="lighter-shade">Body</td>
+                            <td>Brass</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">Ball</td>
+                            <td>Brass, Chrome Plated</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">Stem</td>
+                            <td>Brass, Chrome Plated</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">Seats</td>
+                            <td>PTFE</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">Characterising Disc</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">O-ring</td>
+                            <td>EPDM</td>
+                        </tr>
+                                            <tr>
+                            <td rowspan="2" class="light-shade">Flow Characteristic</td>
+                            <td class="lighter-shade">A to AB</td>
+                            <td>Characterized</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">B to AB</td>
+                            <td>
+ N/A                             </td>
+                        </tr>
+                    <tr>
+                        <td rowspan="2" class="light-shade">Flow Pattern</td>
+                        <td class="lighter-shade">Mixing</td>
+                        <td>
+                                    Yes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lighter-shade">Diverting</td>
+                        <td>
+                                    Yes
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="col-md-5 col-xs-5">
+            <h4>Common Applications</h4>
+            <p class="psubtext">The Siral Z series Zone Valve is a control valve ideal for use in fan coils, unit ventilators, heating and cooling coils and VAV re-heat coils as a change over or bypass sequence is required.. The Z series Zone Valve efficiently helps controls the flow of media for heating and cooling coils. The Z series Zone Valve available in both fail-safe and non fail-safe applications.</p>
+            <hr />
+            <h4>Operations</h4>
+            <p class="psubtext">The Siral Z series Zone Valve is an electronically actuated control ball valve. Control signal options include on/off, floating point or modulating (proportional) and are used to determine the final positioning of the ball rotation angle which determines the amount of flow through the valve.</p>
+            <hr />
+            <h4>Dimensions</h4>
+            <p>
+                
+                
+                    <img id="imgDimension" src="../../images/0.5in_3W_NPT_ZV_wireframe_0.png" alt="" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" />
+            </p>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr style="font-size: 12px; text-align: center;">
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                            <td>D</td>
+                                                    <td>E</td>
+                    </tr>
+                    <tr style="font-size: 12px; text-align: center;">
+                        <td>116 mm</td>
+                        <td>59 mm</td>
+                        <td>103 mm</td>
+                            <td>74 in</td>
+                                                    <td>28 in</td>
+                    </tr>
+                    <tr style="font-size: 12px; text-align: center;">
+                        <td>4.54 in</td>
+                        <td>2.32 in</td>
+                        <td>4.05 in</td>
+                            <td>2.89 in</td>
+                                                    <td>1.11 in</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+            <hr />
+            <h4>Flow Pattern</h4>
+            <p>
+                
+                
+                    <img id="imgFlow" src="../../images/zone%203%20way%20Flow%20Pattern_0.png" alt="" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" />
+            </p>
+        </div>
+    </div>
+</div>
+
+            </div>
+            <button type="button" class="btn btn-default btnPrint">Print Submittal</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#emailModal">Email Submittal</button>
+        
+        <hr class="featurette-divider">
+<div class="row">
+        <div class="col-md-4">
+            <h2>Find a Distributor</h2>
+            <p>Save time and money with Distributor finder from Siral. Enter a ZIP Code, City and State and Street Address.</p>
+            <p><a class="btn btn-default" href="../../Home/Distributors.html" role="button">Find a Distributor</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Terms &amp; Conditions</h2>
+            <p>This page contains the terms &amp; conditions and warranty for Siral USA.</p>
+            <p><a class="btn btn-default" href="../../Home/Terms.html" role="button">View Warranty</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Customer Support</h2>
+            <p>We are here to help you with all Siral products. Find answers and get the help you need.</p>
+            <p><a class="btn btn-default" href="../../Home/Contacts.html" role="button">Contact Us</a></p>
+        </div>
+</div>
+<br />
+<br />
+
+
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Email Submittal Form</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="control-label col-md-4">Enter your email address:</div>
+                            <div class="col-md-8">
+                                <input id="emailAddress" name="emailAddress" style="color: black;" type="text" value="" />
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="sendEmail" type="button" class="btn btn-default">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <div id="sidr-right" class="sidr right">
+        <div class="sidr-inner">
+            <ul class="sidr-class-nav sidr-class-navbar-nav">
+                <li><a href="../../Modular.html">Modular 6-Way</a></li>
+                <li><a href="../../ValveWater.html">Control Valve Water</a></li>
+                <li><a href="../../ValveSteam.html">Control Valve Steam</a></li>
+                <li><a href="../../ButterflyValve.html">Butterfly Valve</a></li>
+                <li><a href="../../Actuator.html">Actuators</a></li>
+            </ul>
+            <ul class="sidr-class-nav sidr-class-navbar-nav sidr-class-navbar-right">
+                <li><a href="#">Distributors</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="https://bidtracer.com/">Login</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="wide-footer">        
+        <div class="container smallfooter">
+            <div class="row">
+                <div class="col-md-4">
+                        <h4>PRODUCTS</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="../../Modular.html">Modular 6-Way</a></li>
+                            <li><a href="../../ValveWater.html">Control Valve Water</a></li>
+                            <li><a href="../../ValveSteam.html">Control Valve Steam</a></li>
+                            <li><a href="../../ButterflyValve.html">Butterfly Valve</a></li>
+                            <li><a href="../../Actuator.html">Actuators</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>ABOUT SIRAL</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="../../Home/About.html">Company Profile</a></li>
+                            
+                            <li><a href="../../News.html">Company News</a></li>
+                            <li><a href="../../Home/Contacts.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>SUBSCRIBE</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Like Siral on Facebook</a></li>
+                            <li><a href="#">Follow Siral on LinkedIn</a></li>
+                            <li><a href="#">Subscribe Newsletter</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="../../Scripts/jquery-1.11.2.min.js"></script>
+    <script src="../../Scripts/jquery-ui-1.10.4.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="../../Scripts/jquery.sidr.min.js"></script>
+    <script src="../../Scripts/printThis.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 B-u-g -->
+    <script src="../../Scripts/ie10-viewport-bug-workaround.js"></script>
+
+
+    <!-- External libraries: jQuery & GreenSock -->
+    <script src="../../Scripts/greensock.js" type="text/javascript"></script>
+    <!-- LayerSlider script files -->
+    <script src="../../Scripts/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="../../Scripts/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function () {
+            $('.navbar-toggle').sidr({
+                name: 'sidr-right',
+                side: 'right',
+                source: '#sideNav'
+            });
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+            <!-- $('#sSub').change(function () { -->
+                <!-- var valveId = $("#sSub").val(); -->
+                <!-- $("#submDetails").load('https://siralamericas.com/Zone/GetSubmittalInfo?id=' + valveId + '&categoryId=14'); -->
+            <!-- }); -->
+			$('#sSub').change(function () {
+				var valveId = $("#sSub").val();
+				
+				// Request the proxy server for the data
+				$.get(`/getSubmittalInfo?id=${valveId}&categoryId=14`, function(data) {
+						// Ensure that the data is valid JSON
+						console.log(data);  // Log the response to see what you're getting
+
+						// Render the data as JSON (or convert it into HTML)
+						if (typeof data === 'object') {
+							// If the response is JSON, display it in a readable format
+							$("#submDetails").html('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+						} else {
+							// If the response is plain HTML or another type, render accordingly
+							$("#submDetails").html(data);
+						}
+					}).fail(function() {
+						alert("Error fetching data.");
+					});
+				});
+            $(".btnPrint").on("click", function () {
+                $('#div_print').printThis();
+            });
+
+            $('#sendEmail').click(function () {
+                var messageBody = $('#div_print').html();
+                var body = $(messageBody);
+                var productImage = body.find('#imgProduct');
+                var dimeImage = body.find('#imgDimension');
+                var flowImage = body.find('#imgFlow');
+
+                productImage.attr("src", 'cid:product.jpg');
+                productImage.css({ 'max-width': '25%', 'height': 'auto' });
+                dimeImage.attr("src", 'cid:dimension.jpg');
+                dimeImage.css({ 'max-width': '40%', 'height': 'auto' });
+                flowImage.attr("src", 'cid:flow.jpg');
+                flowImage.css({ 'max-width': '40%', 'height': 'auto' });
+
+                var logo = body.find('#imgLogo');
+                logo.attr('src', window.location.origin + logo.attr('src'))
+
+                $.ajax({
+                    dataType: "json",
+                    type: "POST",
+                    url: '/Zone/SendSubmittalEmail',
+                    data: { partNumber: $('#submittal h1').text(), recipientEmail: $('#emailAddress').val(), message: encodeURIComponent(body.html()) },
+                    error: function () {
+                    }
+                }).done(function (data) {
+                    if (data) {
+                        alert('Submittal email has been sent.');
+                        $('#emailModal').modal('hide');
+                        $('#emailAddress').val('');
+                    }
+                    else {
+                        alert('Problem encountered while sending email. Sending failed.');
+                    }
+                });
+            });
+        });
+    </script>
+
+    
+</body>
+
+<!-- Mirrored from siralamericas.com/Zone/Submittal/14 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2025 03:28:04 GMT -->
+</html>

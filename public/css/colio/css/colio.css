@@ -1,0 +1,237 @@
+/* Colio - Basic Styles
+================================================== */
+
+.colio {
+	position: relative;
+	height: 0;
+	clear: both;
+	overflow: hidden;
+}
+
+.colio-container {
+	padding: 40px;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.colio-content {
+	display: none;
+	overflow: hidden;
+}
+
+.colio-close,
+.colio-prev,
+.colio-next {
+	outline: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.colio-no-prev,
+.colio-no-next {
+	cursor: default;
+	opacity: 0.2;
+}
+
+/* navigation, close */
+
+.colio-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.colio-navigation {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.colio-navigation a {
+	margin-right: 5px;	
+}
+
+/* placement */
+
+.colio-placement-inside,
+.colio-placement-before {
+	margin-bottom: 20px;
+}
+
+.colio-placement-after {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+/* portfolio filters */
+
+.portfolio .filters {
+	float: right;
+	margin: -35px 20px 20px 0; 
+}
+
+.portfolio .filters a {
+	display: inline-block;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	padding: 3px 2px;
+	color: #999;
+	text-decoration: none;
+}
+
+.portfolio .filters a:hover {
+	color: #666;
+}
+
+.portfolio .filters a.filter-active {
+	color: #666;
+	border-bottom: 1px solid #47dfff;
+}
+
+/* portfolio list */
+
+.portfolio .list {
+	clear: both;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 15px;
+	padding-left: 0px;
+}
+
+.portfolio .list li {
+	float: left;
+	margin: 0 20px 10px 0;
+}
+
+.portfolio .list .thumb {
+	position: relative;
+	width: 255px;
+	height: auto;
+	margin-bottom: 14px;
+	overflow: hidden;
+}
+
+.portfolio .list .thumb img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.portfolio .list .view {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #fff;
+	background: rgba(255,255,255,0.8);
+	border: 1px solid #fff;
+	text-align: center;
+	line-height: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s, visibility 0s linear .3s;
+	-moz-transition: opacity 0.3s, visibility 0s linear .3s;
+	-o-transition: opacity 0.3s, visibility 0s linear .3s;
+	transition: opacity 0.3s, visibility 0s linear .3s;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.portfolio .list .thumb:hover .view {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition-delay: 0s;
+	-moz-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.portfolio .list .view .button { 
+	position: relative;
+	top: 50%;
+	margin-top: -17px;
+}
+
+.portfolio .list h4 {
+	text-align: center;	
+}
+
+.portfolio .list h4 a {
+	text-decoration: none;
+}
+
+.portfolio .colio-active-item h4 a {
+	background: #ccc;
+	padding: 2px 10px;
+}
+
+.portfolio .list p {
+	text-align: center;
+	font-size: 16px;
+	line-height: 1.3em;
+}
+
+/* scroll up */
+
+#scrollUp {
+	position: fixed;
+	bottom: 5px;
+	right: 10px;
+	width: 42px;
+	height: 42px;
+	background: #eee url(../images/scrollup.html) no-repeat center;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#scrollUp:hover {
+	background-color: #e5e5e5;
+}
+
+
+/* #Page Styles
+================================================== */
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.colio { margin-right: 24px!important; }
+		.portfolio .list .thumb { width: 228px; height: 143px; }
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		h1, h2, h3, h4, h5, h6 { text-align: center; }
+		.preview-theme + p { margin-bottom: 42px; }
+		.main-header { margin: 21px 0 0!important; }
+		.purchase { text-align: center; padding-top: 21px; }
+		.portfolio .filters { float: left; margin-top: 0; text-align: center; width: 100%; }
+		.portfolio .filters a { margin: 0 10px; }
+		.portfolio .list li { float: none; margin-right: 0; }
+		.colio { margin-right: 0!important; }
+		.portfolio .list .thumb { width: 420px; height: 260px; }
+		footer { text-align: center; margin-bottom: 14px!important; }
+		
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		.portfolio .list .thumb { width: 300px; height: 187px; }
+	}

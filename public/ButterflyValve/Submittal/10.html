@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="../../Images/favicon.png">
+
+    <title>Submittals</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/jquery-ui.css">
+    <link rel="stylesheet" href="../../css/jquery.sidr.light.css">
+
+    <style>
+        #slider-wrapper
+        {
+            margin: 0 auto;
+            /*padding: 40px;*/
+            max-width: 1920px;
+        }
+
+        #layerslider
+        {
+            max-height: 720px;
+            max-width: 1920px;
+        }
+    </style>
+
+    <!-- LayerSlider stylesheet -->
+    <link rel="stylesheet" href="../../css/layerslider.css" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/carousel.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet" type="text/css">
+    <link href="../../css/colio/css/colio.css" rel="stylesheet" type="text/css">
+
+    
+
+    <!-- fonts -->
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: ['Roboto+Condensed:400,300,700:cyrillic-ext,latin,greek-ext,latin-ext'] }
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+                '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<form action="https://siralamericas.com/Account/LogOff" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="eaCnwA_oCOQh_RQuJGwAf0213ApFpB_aXv_aRkmpSS71ZoDmgtqsbUnaPxkd0cyZ_-JG5G8sBgPSwAG5cTkFKHFRupXnBsBoLRgJcRRKisE1" /></form>    <div class="navbar-wrapper">
+        <div class="container">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <!-- data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" -->
+                        <button type="button" class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="../../index.html">
+                            <img src="../../Images/logo.png" alt="" /></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="sideNav">
+                        <ul class="nav navbar-nav">
+                            <li ><a href="../../Modular.html">Modular 6-Way</a></li>
+                            <li ><a href="../../ValveWater.html">Control Valve Water</a></li>
+                            <li ><a href="../../ValveSteam.html">Control Valve Steam</a></li>
+                            <li ><a href="../../ButterflyValve.html">Butterfly Valve</a></li>
+                            <li ><a href="../../Zone.html">Zone Valve</a></li>
+                            <li ><a href="../../Actuator.html">Actuators</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                            <li><a href="../../Home/Contacts.html">Contacts</a></li>
+                                <li><a href="https://bidtracer.com/">Login</a></li>
+                            
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+    </div>
+
+    
+
+<div class="wrapcontainer2">
+    <div class="container marketing">
+        <div style="margin-bottom: 50px;">
+            <ul class="nav nav-tabs">
+                        
+                            <li class=" "><a href="9.html">BFV 2-way</a></li>
+                        
+                            <li class=" active  "><a href="10.html">BFV 3-way</a></li>
+
+            </ul>
+        </div>
+        <h1>BFV 3-way</h1>
+        <p>Filter submittals by desired Flow</p>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div style="max-width: 320px; margin: 0px auto;">
+                    <select class="form-control" id="sSub">
+                            <option value="624">2&quot;, Cv 115, C3050</option>
+                            <option value="638">2&quot;, Cv 115, C3050L</option>
+                            <option value="625">2.5&quot;, Cv 195, C3065</option>
+                            <option value="639">2.5&quot;, Cv 195, C3065L</option>
+                            <option value="626">3&quot;, Cv 300, C3080</option>
+                            <option value="640">3&quot;, Cv 300, C3080L</option>
+                            <option value="627">4&quot;, Cv 600, C3100</option>
+                            <option value="641">4&quot;, Cv 600, C3100L</option>
+                            <option value="628">5&quot;, Cv 1010, C3125</option>
+                            <option value="642">5&quot;, Cv 1010, C3125L</option>
+                            <option value="629">6&quot;, Cv 1580, C3150</option>
+                            <option value="643">6&quot;, Cv 1580, C3150L</option>
+                            <option value="630">8&quot;, Cv 3100, C3200</option>
+                            <option value="644">8&quot;, Cv 3100, C3200L</option>
+                            <option value="631">10&quot;, Cv 5300, C3250</option>
+                            <option value="645">10&quot;, Cv 5300, C3250L</option>
+                            <option value="632">12&quot;, Cv 8252, C3300</option>
+                            <option value="646">12&quot;, Cv 8252, C3300L</option>
+                            <option value="633">14&quot;, Cv 11920, C3350</option>
+                            <option value="634">16&quot;, Cv 16382, C3400</option>
+                            <option value="635">18&quot;, Cv 21701, C3450</option>
+                            <option value="636">20&quot;, Cv 27899, C3500</option>
+                            <option value="637">24&quot;, Cv 43101, C3600</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <hr class="featurette-divider2">
+        <button type="button" class="btn btn-default btnPrint" value="Print">Print Submittal</button>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#emailModal">Email Submittal</button>
+        <div id="submDetails" style="min-height:200px;">
+            
+
+<div class="thumbnail" style="max-width: 800px; padding: 20px; margin: 40px auto;" id="div_print">
+    <div class="row submittal" id="submittal">
+        <div class="col-md-8 col-xs-8" style="padding-top: 50px;">
+            <img id="imgLogo" src="../../Images/logo-submittals.png" alt="">
+            <h1 class="text-left">C3050</h1>
+            <p class="lead2">416 Stainless Steel Disc</p>
+            <p>2&quot;, 3-way, Flange</p>
+        </div>
+
+        <div class="col-md-4 col-xs-4 text-center">
+            
+            
+
+                <img id="imgProduct" src="../../images/bfv-small-thumb-sub_1013.jpg" alt="" />
+        </div>
+        <!-- Submittal -->
+        <div class="col-md-7 col-xs-7" style="padding: 15px; padding-bottom: 0px;">
+            <div class="table-responsive">
+                <table style="width: 80%;" class="table table-bordered ">
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="light-shade">DN</td>
+                            <td width="47%">50</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="light-shade">Size (inches)</td>
+                            <td>2&quot;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="light-shade">Cv</td>
+                            <td>115</td>
+                        </tr>
+                                                                            <tr>
+                                <td width="25%" rowspan="2" class="light-shade">Media</td>
+                                <td width="28%" class="lighter-shade">Service</td>
+                                <td>Water, Glycole 60%</td>
+                            </tr>
+
+                        <tr>
+                            <td class="lighter-shade">Temperature Range</td>
+                            <td> -22&#176;F to 250&#176;F [-30&#176;C to 120&#176;C]</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2 " class="light-shade">Pressure</td>
+                            <td class="lighter-shade">Body</td>
+                            <td>ANSI CLASS 125</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">Close Off</td>
+                            <td>200 PSI</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="light-shade">Leakage</td>
+                            <td class="lighter-shade">A-AB Port</td>
+                            <td>
+ 0%                         </td>
+                    </tr>
+                    <tr>
+                        <td class="lighter-shade">B Port</td>
+                        <td>
+ N/A                         </td>
+                    </tr>
+                        <tr>
+                            <td rowspan="4" class="light-shade">Materials</td>
+                            <td class="lighter-shade">Body</td>
+                            <td>Ductile iron ASTM A536</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">Bushing</td>
+                            <td>RPTFE</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">Shaft</td>
+                            <td>416 Stainless Steel</td>
+                        </tr>
+                        <tr>
+                            <td class="lighter-shade">Disc</td>
+                            <td>304 Stainless Steel</td>
+                        </tr>
+                                            <tr>
+                            <td class="light-shade">Flow Characteristic</td>
+                            <td class="lighter-shade"> </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    <tr>
+                        <td rowspan="2" class="light-shade">Flow Pattern</td>
+                        <td class="lighter-shade">Mixing</td>
+                        <td>
+                                    Yes
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lighter-shade">Diverting</td>
+                        <td>
+                                    Yes
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="light-shade">Max Velocity</td>
+                            <td class="lighter-shade"> </td>
+                            <td>12 FPS</td>
+                        </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="col-md-5 col-xs-5">
+            <h4>Common Applications</h4>
+            <p class="psubtext">The C and CL series butterfly valves are ideal for multiple industrial and HVAC applications including cooling tower isolation, chiller bypass, change over systems, large coils and air handling units. The valves are offered with NEMA 2, NEMA 4X electric and pneumatic actuation.</p>
+            <hr />
+            <h4>Operations</h4>
+            <p class="psubtext">The butterfly is an electronically actuated valve. Control signal options include on/off, floating point or modulating (proportional) and are used to determine the final positioning of the disc rotataion angle which determines the amount of flow through the valve. Due to the inherent characteristics of the butterfly valve it is typically used for high flow volumes and does not offer mush of a pressure drop at opennings above 70 degrees of full open.</p>
+            <hr />
+            <h4>Dimensions</h4>
+            <p>
+                
+                
+                    <img id="imgDimension" src="../../images/bfv_3way_1015.jpg" alt="" class="featurette-image img-responsive" data-src="holder.js/500x500/auto" />
+            </p>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr style="font-size: 12px; text-align: center;">
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                            <td>D</td>
+                                            </tr>
+                    <tr style="font-size: 12px; text-align: center;">
+                        <td>114 mm</td>
+                        <td>156 mm</td>
+                        <td>156 mm</td>
+                            <td>207 in</td>
+                                            </tr>
+                    <tr style="font-size: 12px; text-align: center;">
+                        <td>4.5 in</td>
+                        <td>6.15 in</td>
+                        <td>6.15 in</td>
+                            <td>8.13 in</td>
+                        
+                    </tr>
+
+                </tbody>
+            </table>
+            <hr />
+        </div>
+    </div>
+</div>
+
+        </div>
+        <button type="button" class="btn btn-default btnPrint">Print Submittal</button>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#emailModal">Email Submittal</button>
+        <hr class="featurette-divider">
+<div class="row">
+        <div class="col-md-4">
+            <h2>Find a Distributor</h2>
+            <p>Save time and money with Distributor finder from Siral. Enter a ZIP Code, City and State and Street Address.</p>
+            <p><a class="btn btn-default" href="../../Home/Distributors.html" role="button">Find a Distributor</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Terms &amp; Conditions</h2>
+            <p>This page contains the terms &amp; conditions and warranty for Siral USA.</p>
+            <p><a class="btn btn-default" href="../../Home/Terms.html" role="button">View Warranty</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Customer Support</h2>
+            <p>We are here to help you with all Siral products. Find answers and get the help you need.</p>
+            <p><a class="btn btn-default" href="../../Home/Contacts.html" role="button">Contact Us</a></p>
+        </div>
+</div>
+<br />
+<br />
+
+
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Email Submittal Form</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="control-label col-md-4">Enter your email address:</div>
+                            <div class="col-md-8">
+                                <input id="emailAddress" name="emailAddress" style="color: black;" type="text" value="" />
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button id="sendEmail" type="button" class="btn btn-default">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <div id="sidr-right" class="sidr right">
+        <div class="sidr-inner">
+            <ul class="sidr-class-nav sidr-class-navbar-nav">
+                <li><a href="../../Modular.html">Modular 6-Way</a></li>
+                <li><a href="../../ValveWater.html">Control Valve Water</a></li>
+                <li><a href="../../ValveSteam.html">Control Valve Steam</a></li>
+                <li><a href="../../ButterflyValve.html">Butterfly Valve</a></li>
+                <li><a href="../../Actuator.html">Actuators</a></li>
+            </ul>
+            <ul class="sidr-class-nav sidr-class-navbar-nav sidr-class-navbar-right">
+                <li><a href="#">Distributors</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="https://bidtracer.com/">Login</a></li>
+                
+            </ul>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="wide-footer">        
+        <div class="container smallfooter">
+            <div class="row">
+                <div class="col-md-4">
+                        <h4>PRODUCTS</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="../../Modular.html">Modular 6-Way</a></li>
+                            <li><a href="../../ValveWater.html">Control Valve Water</a></li>
+                            <li><a href="../../ValveSteam.html">Control Valve Steam</a></li>
+                            <li><a href="../../ButterflyValve.html">Butterfly Valve</a></li>
+                            <li><a href="../../Actuator.html">Actuators</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>ABOUT SIRAL</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="../../Home/About.html">Company Profile</a></li>
+                            
+                            <li><a href="../../News.html">Company News</a></li>
+                            <li><a href="../../Home/Contacts.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>SUBSCRIBE</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Like Siral on Facebook</a></li>
+                            <li><a href="#">Follow Siral on LinkedIn</a></li>
+                            <li><a href="#">Subscribe Newsletter</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="../../Scripts/jquery-1.11.2.min.js"></script>
+    <script src="../../Scripts/jquery-ui-1.10.4.min.js"></script>
+    <script src="../../Scripts/bootstrap.min.js"></script>
+    <script src="../../Scripts/jquery.sidr.min.js"></script>
+    <script src="../../Scripts/printThis.js"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 B-u-g -->
+    <script src="../../Scripts/ie10-viewport-bug-workaround.js"></script>
+
+
+    <!-- External libraries: jQuery & GreenSock -->
+    <script src="../../Scripts/greensock.js" type="text/javascript"></script>
+    <!-- LayerSlider script files -->
+    <script src="../../Scripts/layerslider.transitions.js" type="text/javascript"></script>
+    <script src="../../Scripts/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        $(document).ready(function () {
+            $('.navbar-toggle').sidr({
+                name: 'sidr-right',
+                side: 'right',
+                source: '#sideNav'
+            });
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function() {
+            <!-- $('#sSub').change(function () { -->
+                <!-- var valveId = $("#sSub").val(); -->
+                <!-- $("#submDetails").load('https://siralamericas.com/ButterflyValve/GetSubmittalInfo?id=' + valveId + '&categoryId=10'); -->
+            <!-- }); -->
+
+			$('#sSub').change(function () {
+				var valveId = $("#sSub").val();
+				
+				// Request the proxy server for the data
+				$.get(`/getSubmittalInfo?id=${valveId}&categoryId=10`, function(data) {
+					// Ensure that the data is valid JSON
+					console.log(data);  // Log the response to see what you're getting
+
+					// Render the data as JSON (or convert it into HTML)
+					if (typeof data === 'object') {
+						// If the response is JSON, display it in a readable format
+						$("#submDetails").html('<pre>' + JSON.stringify(data, null, 2) + '</pre>');
+					} else {
+						// If the response is plain HTML or another type, render accordingly
+						$("#submDetails").html(data);
+					}
+				}).fail(function() {
+					alert("Error fetching data.");
+				});
+			});
+
+            $(".btnPrint").on("click", function () {
+                $('#div_print').printThis();
+            });
+
+            $('#sendEmail').click(function () {
+                var messageBody = $('#div_print').html();
+                var body = $(messageBody);
+                var productImage = body.find('#imgProduct');
+                var dimeImage = body.find('#imgDimension');
+                var flowImage = body.find('#imgFlow');
+
+                productImage.attr("src", 'cid:product.jpg');
+                productImage.css({ 'max-width': '25%', 'height': 'auto' });
+                dimeImage.attr("src", 'cid:dimension.jpg');
+                dimeImage.css({ 'max-width': '40%', 'height': 'auto' });
+                flowImage.attr("src", 'cid:flow.jpg');
+                flowImage.css({ 'max-width': '40%', 'height': 'auto' });
+
+                var logo = body.find('#imgLogo');
+                logo.attr('src', window.location.origin + logo.attr('src'))
+
+                $.ajax({
+                    dataType: "json",
+                    type: "POST",
+                    url: '/ButterflyValve/SendSubmittalEmail',
+                    data: { partNumber: $('#submittal h1').text(), recipientEmail: $('#emailAddress').val(), message: encodeURIComponent(body.html()) },
+                    error: function () {
+                    }
+                }).done(function (data) {
+                    if (data) {
+                        alert('Submittal email has been sent.');
+                        $('#emailModal').modal('hide');
+                        $('#emailAddress').val('');
+                    }
+                    else {
+                        alert('Problem encountered while sending email. Sending failed.');
+                    }
+                });
+            });
+        });
+    </script>
+
+    
+</body>
+
+<!-- Mirrored from siralamericas.com/ButterflyValve/Submittal/10 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 24 Feb 2025 03:27:59 GMT -->
+</html>
